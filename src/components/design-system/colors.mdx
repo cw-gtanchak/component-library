@@ -1,0 +1,43 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+
+import { colors } from "../../styles/colors";
+
+<Meta title="Design System/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="PRIMARY-BLACK"
+    subtitle="Used for primary text and key UI elements."
+    colors={{
+      ...colors.primary,
+    }}
+  />
+  <ColorItem
+    title="SECONDARY-GRAY"
+    subtitle="Used for secondary text, borders, and backgrounds."
+    colors={{
+      ...colors.secondary,
+    }}
+  />
+  <ColorItem
+    title="SUCCESS-GREEN"
+    subtitle="Used to indicate success messages and actions."
+    colors={{
+      ...colors.success,
+    }}
+  />
+  <ColorItem
+    title="WARNING-YELLOW"
+    subtitle="Used to highlight warnings and cautionary messages."
+    colors={{
+      ...colors.warning,
+    }}
+  />
+  <ColorItem
+    title="ERROR-RED"
+    subtitle="Used to indicate errors and critical alerts."
+    colors={{
+      ...colors.error,
+    }}
+  />
+</ColorPalette>
